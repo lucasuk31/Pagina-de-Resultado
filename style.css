@@ -1,3 +1,360 @@
-@media screen and (min-width: 320px){
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #CFC5FF;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    background-color: #303B59;
+    color: #E1E8EF;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) {
+
+    .firstBox {
+        background-image: linear-gradient(to top, #312CEA, #6743FF);
+        padding: .5rem 0 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 28px 28px;
+        gap: 1rem;
+    }
+
+    .headText,
+    .summary {
+        font-weight: bolder;
+    }
+
+    .circle {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #4633EF, #4B22CC);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .result {
+        font-weight: bolder;
+        color: #FFFFFA;
+        font-size: 44px;
+    }
+
+    .subResult {
+        font-size: 12px;
+        font-weight: 500;
+        color: #857EF4;
+    }
+
+    .textResult {
+        font-weight: 500;
+        color: #FFFFFA;
+        font-size: 20px;
+    }
+
+    .textInfo {
+        font-size: 14px;
+        width: 70%;
+        text-align: center;
+        color: #A7A7FF;
+    }
+
+    .secondBox {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    .summary {
+        color: #393C4E;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem;
+        border-radius: 11px;
+    }
+
+    .subject {
+        font-weight: 600;
+    }
+
+    .note {
+        font-weight: 700;
+        color: #393C4E;
+    }
+
+    .max {
+        color: #BCB4B7;
+    }
+
+    #redBox {
+        background-color: #FFF6F5;
+        color: #E08382;
+    }
+
+    #speed {
+        fill: #E08382;
+    }
+
+    #yellowBox {
+        background-color: #FFFBF2;
+        color: #E1BB61;
+    }
+
+    #brain {
+        fill: #E1BB61;
+    }
+
+    #greenBox {
+        background-color: #F2FBFA;
+        color: #46BF9D;
+    }
+
+    #chat {
+        fill: #46BF9D;
+    }
+
+    #blueBox {
+        background-color: #F3F3FD;
+        color: #242EA2;
+    }
+
+    #eye {
+        fill: #242EA2;
+    }
+
+    .part1,
+    .part2 {
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        height: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .firstBox {
+        padding: 1rem 0 2rem 0;
+        gap: 2rem;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .headText,
+    .summary {
+        font-size: 22px;
+    }
+
+    .circle {
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+
+    .result {
+        font-size: 60px;
+    }
+
+    .subResult {
+        font-size: 18px;
+    }
+
+    .textResult {
+        font-size: 30px;
+    }
+
+    .textInfo {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .secondBox {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    .box {
+        padding: .9rem;
+        font-size: 20px;
+    }
+
+    .part1,
+    .part2 {
+        gap: .8rem;
+    }
+
+    .icon {
+        height: 1.5rem;
+    }
+
+    button {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outsideBox {
+        width: 80vw;
+        height: 70vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 28px;
+        box-shadow: 5px 40px 100px 50px #F1F4FD;
+    }
+
+    .firstBox {
+        height: 100%;
+        width: 50%;
+        border-radius: 28px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .headText,
+    .summary {
+        font-weight: bolder;
+    }
+
+    .circle {
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+
+    .result {
+        font-size: 50px;
+    }
+
+    .subResult {
+        font-size: 16px;
+    }
+
+    .textResult {
+        font-size: 30px;
+    }
+
+    .textInfo {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .secondBox {
+        padding: 3.5rem 1rem 1rem 1rem;
+        gap: 1rem;  
+        height: 100%;
+        width: 50%;
+    }
+
+    .boxes {
+        gap: .8rem;
+    }
+
+    .box {
+        padding: .8rem;
+    }
+
+    .subject,
+    .note,
+    .max {
+        font-size: 17px;
+    }
+
+    .part1,
+    .part2 {
+        gap: .8rem;
+    }
+
+    .icon {
+        height: 1rem;
+    }
+
+    button {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .outsideBox {
+        width: 65vw;
+        height: 60vh;
+    }
+
+    .secondBox {
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    button {
+        padding: .8rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .outsideBox {
+        width: 75vw;
+        height: 65vh;
+    }
+
+    .textInfo {
+        font-size: 16px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .outsideBox {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .firstBox {
+        gap: 1rem;        
+        padding: 1.5rem;
+    }
+
+    .textInfo {
+        width: 90%;
+    }
+
+    .secondBox {
+        gap: 1.3rem;
+        padding: 1.5rem;
+    }
 }
